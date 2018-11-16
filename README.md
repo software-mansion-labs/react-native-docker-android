@@ -23,7 +23,7 @@ Optionally you can add the following variables:
 
 The built image will have a docker tag of with version of the following syntax:
 
-`NODE_VERSION-YARN_VERSION-ANDROID_STUDIO_VERSION-ANDROID_PLATFORM-BUILD_TOOLS_VERSION-$REVISION`
+`NODE_VERSION-YARN_VERSION-ANDROID_STUDIO_VERSION-ANDROID_PLATFORM-BUILD_TOOLS_VERSION-REVISION`
 
 It may look inconvenient to use but it allows you to refer to particular 
 combination of versions if you're using CI.
@@ -61,10 +61,10 @@ cd android && ./gradlew assembleDebug
 The .apk file will be located at `/app/android/app/build/outputs/apk/debug/app-debug.apk`
 
 
+# Source & Pre-built images on Docker Hub
 
-# Source
-
-https://github.com/SoftwareMansion/react-native-docker-android
+* https://github.com/SoftwareMansion/react-native-docker-android
+* https://hub.docker.com/r/swmansion/react-native-android
 
 
 # Authors
