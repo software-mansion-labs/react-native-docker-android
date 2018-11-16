@@ -8,7 +8,8 @@ RUN \
     gpgv2 \
     curl \
     xz-utils \
-    git-core
+    git-core \
+  && rm -rf /var/lib/apt/lists/*
 
 # NODE.JS
 # Based on https://github.com/nodejs/docker-node/blob/336fb229392876a5f0d893436aeccf8c80011eeb/10/stretch/Dockerfile
@@ -80,7 +81,8 @@ RUN \
     libstdc++6:i386 \
     lib32z1 \
     libbz2-1.0:i386 \
-    unzip
+    unzip \
+  && rm -rf /var/lib/apt/lists/*
 ENV ANDROID_HOME=/usr/local/android
 RUN \
   curl -fsSLO --compressed "https://dl.google.com/android/repository/sdk-tools-linux-4333796.zip" \
