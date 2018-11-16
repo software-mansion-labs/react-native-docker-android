@@ -37,7 +37,7 @@ you should call the following commands from your application's directory:
 Enter the image, while mounting application as `/app`:
 
 ```sh
-docker run -ti -v `pwd`:/app swmansion/react-native-android:10.13.0-1.10.1-4333796-27-28.0.3-0 bash
+docker run --rm -ti -v `pwd`:/app swmansion/react-native-android:10.13.0-1.10.1-4333796-27-28.0.3-0 bash
 ```
 
 Inside the container, change the directory to the application's directory:
