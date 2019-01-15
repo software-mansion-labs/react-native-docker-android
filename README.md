@@ -9,7 +9,7 @@ based on React Native and ensures that build happens in the clear environment.
 You can rebuild it by issuing the following command:
 
 ```sh
-NODE_VERSION=10.13.0 YARN_VERSION=1.10.1 ANDROID_STUDIO_VERSION=4333796 ANDROID_PLATFORM=27 BUILD_TOOLS_VERSION=28.0.3 make build
+NODE_VERSION=10.13.0 YARN_VERSION=1.10.1 ANDROID_SDK_VERSION=4333796 ANDROID_PLATFORM=27 BUILD_TOOLS_VERSION=28.0.3 make build
 ```
 
 Optionally you can add the following variables:
@@ -23,7 +23,7 @@ Optionally you can add the following variables:
 
 The built image will have a docker tag of with version of the following syntax:
 
-`NODE_VERSION-YARN_VERSION-ANDROID_STUDIO_VERSION-ANDROID_PLATFORM-BUILD_TOOLS_VERSION-REVISION`
+`NODE_VERSION-YARN_VERSION-ANDROID_SDK_VERSION-ANDROID_PLATFORM-BUILD_TOOLS_VERSION-REVISION`
 
 It may look inconvenient to use but it allows you to refer to particular 
 combination of versions if you're using CI.
