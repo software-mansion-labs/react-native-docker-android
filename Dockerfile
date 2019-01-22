@@ -89,8 +89,8 @@ RUN \
   && unzip -d $ANDROID_HOME sdk-tools-linux-4333796.zip \
   && rm sdk-tools-linux-4333796.zip
 RUN \
-  yes | $ANDROID_HOME/tools/bin/sdkmanager --licenses \
-  && $ANDROID_HOME/tools/bin/sdkmanager --install "platforms;android-$ANDROID_PLATFORM" "build-tools;$BUILD_TOOLS_VERSION" "system-images;android-$ANDROID_PLATFORM;google_apis_playstore;x86"
+  yes | $ANDROID_HOME/tools/bin/sdkmanager --licenses > /dev/null \
+  && yes | $ANDROID_HOME/tools/bin/sdkmanager --install "platforms;android-$ANDROID_PLATFORM" "build-tools;$BUILD_TOOLS_VERSION" "system-images;android-$ANDROID_PLATFORM;google_apis_playstore;x86"
 ENV PATH="${PATH}:${ANDROID_HOME}/emulator"
 ENV PATH="${PATH}:${ANDROID_HOME}/tools"
 ENV PATH="${PATH}:${ANDROID_HOME}/tools/bin"
